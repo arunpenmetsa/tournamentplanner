@@ -1,0 +1,19 @@
+README File
+
+The Tournament Planner project consists of 3 files
+
+tournament.sql - This file contains the table and view definitions for the tournament planner.
+tournament.py - This file contains the functions that add to, delete from and update the tables in tournament.sql. It also contains the python code to process the results of various queries on the tables such as allocating matches, getting results etc.
+tournament_test.py - This file contains functions that test all the functions in tournament.py. The runTournament() function runs a tournament to completion.
+
+To create and run the tournament, run the following commands
+	
+ psql -f tournament.sql
+ perl tournament_test.py
+
+
+NOTE - Additional features beyond basic project requirements
+- Prevent Rematches between players - Through SQL query in swissPairings()
+- Support Odd number of players - See swissPairings()
+- Rank players according to opponent match wins
+
